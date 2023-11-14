@@ -1,3 +1,72 @@
+## Table of Contents
+
+1. [Project Name and Description](#1---project-name-and-description)
+
+   - [Project Name](#project-name)
+   - [Description](#description)
+   - [Why Forum-System](#why-forum-system)
+   - [Key Aims](#key-aims)
+   - [Inspiration from Twitter](#inspiration-from-twitter)
+   - [Beyond Expectations](#beyond-expectations)
+
+2. [Installation Instructions](#2---installation-instructions)
+
+   - [Clone the Repository](#1-clone-the-repository)
+   - [Install Dependencies](#2-install-dependencies)
+   - [Run the Application](#3-run-the-application)
+   - [Access the Application](#4-access-the-application)
+
+3. [Usage](#3---usage)
+
+   - [Navigate through Threads](#1-navigate-through-threads)
+   - [Contribute to Discussions](#2-contribute-to-discussions)
+   - [Interact with Posts](#3-interact-with-posts)
+
+4. [Technologies Used](#4---technologies-used)
+
+   - [React](#1-react)
+   - [JSX](#2-jsx)
+   - [CSS](#3-css)
+   - [JavaScript](#4-javascript)
+
+5. [Features](#5---features)
+
+   - [Secure Account Creation and Authentication](#1-secure-account-creation-and-authentication)
+   - [Effortless Account Login and Logout](#2-effortless-account-login-and-logout)
+   - [Thread Creation and Interaction](#3-thread-creation-and-interaction)
+   - [Personalized Thread Management](#4-personalized-thread-management)
+   - [Thread Exploration and Interaction](#5-thread-exploration-and-interaction)
+   - [Secure Sign-Out Functionality](#6-secure-sign-out-functionality)
+
+6. [Upcoming Features](#6---upcoming-features)
+
+   - [Account Management](#1-account-management)
+   - [Contributions Count and Thread History](#2-contributions-count-and-thread-history)
+   - [User Levels and Rewards](#3-user-levels-and-rewards)
+   - [Advantages for Each Level](#4-advantages-for-each-level)
+   - [Enhanced User Control](#5-enhanced-user-control)
+   - [Upcoming Features: CSS Enhancements](#6-upcoming-features-css-enhancements)
+
+7. [Screenshots or GIFs](#7---screenshots-or-gifs)
+
+8. [Contributing Guidelines](#8---contributing-guidelines)
+
+   - [Fork the Repository](#fork-the-repository)
+   - [Clone the Repository](#clone-the-repository)
+   - [Create a Branch](#create-a-branch)
+   - [Make Changes](#make-changes)
+   - [Commit Changes](#commit-changes)
+   - [Push Changes](#push-changes)
+   - [Submit a Pull Request](#submit-a-pull-request)
+   - [Code Review](#code-review)
+   - [Merge Pull Request](#merge-pull-request)
+
+9. [License](#9---license)
+
+10. [Acknowledgments](#10---acknowledgments)
+
+- [Sam Williams](#sam-williams)
+
 ## 1 - Project Name and Description
 
 ### Project Name
@@ -202,7 +271,7 @@ Clone the Repository:
 
 Clone the forked repository to your local machine using the following command:
 
-git clone https://github.com/your-username/forum-system.git
+git clone https://github.com/nugrezo/forum-system.git
 
 Create a Branch:
 
