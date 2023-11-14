@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
+/* Functional component representing the registration page of the 
+forum application. */
 const Register = () => {
+  // Navigation hook to enable programmatic navigation.
   const navigate = useNavigate();
-
+  // State variables to manage user input for registration.
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+  /* Function to handle user registration, sending a request to the server. */
   const signUp = (email, password, username) => {
+    // Fetch to register a new user on the server.
     fetch("https://forum-system-7877dc8bc5ee.herokuapp.com/api/register", {
       method: "POST",
       body: JSON.stringify({
@@ -27,30 +31,36 @@ const Register = () => {
         return res.json();
       })
       .then(() => {
+        // Successful registration alert, navigate to the login page.
         alert("Account created successfully!");
         navigate("/");
       })
       .catch((error) => {
+        // Handle registration errors, such as duplicate email.
         console.error("Error:", error);
         alert("Email already registered");
       });
   };
-
+  // Event handler for form submission, triggers user registration.
   const handleSubmit = (e) => {
+    // Log user input for debugging purposes.
     console.log(
       `email is ${email}, password is: ${password} username is:  ${username}`
     );
     e.preventDefault();
+    // Call the registration function with user input.
     signUp(email, password, username);
+    // Clear input fields after submission.
     setEmail("");
     setUsername("");
     setPassword("");
   };
-
+  // JSX rendering of the Register component, including the registration form.
   return (
     <main className="register">
       <h1 className="registerTitle">Create an account</h1>
       <form className="registerForm" onSubmit={handleSubmit}>
+        {/* Input field for username */}
         <label htmlFor="username">Username</label>
         <input
           type="text"
@@ -60,6 +70,7 @@ const Register = () => {
           value={username}
           onChange={(e) => setUsername(e.target.value)}
         />
+        {/* Input field for email address */}
         <label htmlFor="email">Email Address</label>
         <input
           type="text"
@@ -69,6 +80,7 @@ const Register = () => {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
+        {/* Input field for password */}
         <label htmlFor="password">Password</label>
         <input
           type="password"
@@ -78,7 +90,9 @@ const Register = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        {/* Button for submitting the registration form */}
         <button className="registerBtn">REGISTER</button>
+        {/* Link to navigate to the login page */}
         <p>
           Have an account? <Link to="/">Sign in</Link>
         </p>
