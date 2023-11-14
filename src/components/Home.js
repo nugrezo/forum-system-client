@@ -41,7 +41,6 @@ const Home = () => {
     };
     checkUser();
   }, [navigate]);
-
   // Function to create a new thread and update the list of threads.
   /* Defines a function createThread to handle the creation of a new thread.
     Retrieves user information from local storage.
@@ -126,17 +125,42 @@ const Home = () => {
           {threadList.length === 0 ? (
             <p>No threads available.</p>
           ) : (
+            /*
+              This is a JavaScript map function used to iterate over each thread 
+              in the threadList array and return a set of React elements.
+              <div className="thread__item" key={thread.id}>: Each thread is 
+              wrapped in a div with the class name "thread__item," and each thread 
+              is assigned a unique key based on its id.
+              */
             threadList.map((thread) => (
               <div className="thread__item" key={thread.id}>
                 <p>{thread.title}</p>
                 <p>Created by: {thread.username}</p>
+                {/* 
+                These components (Likes and Comments) are likely responsible for 
+                rendering the user interactions related to liking and commenting 
+                on the specific thread. The structure suggests modularity, allowing 
+                for the reusability of these components throughout the application.               
+                */}
                 <div className="react__container">
-                  {/* Likes component */}
+                  {/* 
+                  - Likes component 
+                  - Likes component that takes two props: numberOfLikes and threadId. 
+                  numberOfLikes is the length of the likes array associated with 
+                  the thread, and threadId is the unique identifier of the thread.       
+                  */}
                   <Likes
                     numberOfLikes={thread.likes.length}
                     threadId={thread.id}
                   />
-                  {/* Comments component */}
+                  {/* 
+                  - Comments component
+                  - This is a Comments component that takes three props: 
+                  numberOfComments, threadId, and title. numberOfComments is the 
+                  length of the replies array associated with the thread, 
+                  threadId is the unique identifier of the thread, and title is 
+                  the title of the thread.
+                  */}
                   <Comments
                     numberOfComments={thread.replies.length}
                     threadId={thread.id}
