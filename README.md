@@ -51,21 +51,19 @@
 
 8. [Contributing Guidelines](#8---contributing-guidelines)
 
-   - [Fork the Repository](#fork-the-repository)
-   - [Clone the Repository](#clone-the-repository)
-   - [Create a Branch](#create-a-branch)
-   - [Make Changes](#make-changes)
-   - [Commit Changes](#commit-changes)
-   - [Push Changes](#push-changes)
-   - [Submit a Pull Request](#submit-a-pull-request)
-   - [Code Review](#code-review)
-   - [Merge Pull Request](#merge-pull-request)
+   - [Fork the Repository](#8-1-fork-the-repository)
+   - [Clone the Repository](#8-2-clone-the-repository)
+   - [Create a Branch](#8-3-create-a-branch)
+   - [Make Changes](#8-4-make-changes)
+   - [Commit Changes](#8-5-commit-changes)
+   - [Push Changes](#8-6-push-changes)
+   - [Submit a Pull Request](#8-7-submit-a-pull-request)
+   - [Code Review](#8-8-code-review)
+   - [Merge Pull Request](#8-9-merge-pull-request)
 
 9. [License](#9---license)
 
 10. [Acknowledgments](#10---acknowledgments)
-
-- [Sam Williams](#sam-williams)
 
 ## 1 - Project Name and Description
 
