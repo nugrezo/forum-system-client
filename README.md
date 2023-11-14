@@ -107,7 +107,7 @@ To set up the Forum-System front-end application developed with React, follow th
 
 1. **Clone the Repository**
 
-git clone https://github.com/forum-system-client.git
+git clone https://github.com/nugrezo/forum-system-client.git
 
 cd forum-system-client
 
