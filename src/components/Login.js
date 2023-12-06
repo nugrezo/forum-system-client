@@ -13,7 +13,7 @@ const Login = () => {
   const loginUser = (email, password) => {
     // Set loading to true while waiting for the response
     setLoading(true);
-    fetch("https://forum-system-7877dc8bc5ee.herokuapp.com/api/", {
+    fetch("http://localhost:4000/api/", {
       method: "POST",
       body: JSON.stringify({
         email,

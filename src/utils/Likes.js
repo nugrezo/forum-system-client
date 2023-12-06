@@ -40,9 +40,7 @@ const Likes = ({ initialNumberOfLikes, threadId }) => {
      which includes the threadId as part of the URL to identify the thread.
      The response is converted to JSON using res.json().
     */
-    fetch(
-      `https://forum-system-7877dc8bc5ee.herokuapp.com/api/thread/likes/${threadId}`
-    )
+    fetch(`http://localhost:4000/api/thread/likes/${threadId}`)
       .then((res) => res.json())
       .then((data) => {
         /*
@@ -85,7 +83,7 @@ const Likes = ({ initialNumberOfLikes, threadId }) => {
       localStorage. This assumes that the user is authenticated, as it uses the user 
       ID stored in the local storage.    
     */
-    fetch("https://forum-system-7877dc8bc5ee.herokuapp.com/api/thread/like", {
+    fetch("http://localhost:4000/api/thread/like", {
       method: "POST",
       body: JSON.stringify({
         threadId,

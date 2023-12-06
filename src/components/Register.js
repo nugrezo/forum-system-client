@@ -13,7 +13,7 @@ const Register = () => {
   /* Function to handle user registration, sending a request to the server. */
   const signUp = (email, password, username) => {
     // Fetch to register a new user on the server.
-    fetch("https://forum-system-7877dc8bc5ee.herokuapp.com/api/register", {
+    fetch("http://localhost:4000/api/register", {
       method: "POST",
       body: JSON.stringify({
         email,

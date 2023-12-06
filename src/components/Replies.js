@@ -39,18 +39,15 @@ const Replies = () => {
     // Function to fetch replies for the current thread from the server.
     const fetchReplies = () => {
       // Making a POST request to the server's endpoint for fetching replies.
-      fetch(
-        "https://forum-system-7877dc8bc5ee.herokuapp.com/api/thread/replies",
-        {
-          method: "POST",
-          body: JSON.stringify({
-            id,
-          }),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      )
+      fetch("http://localhost:4000/api/thread/replies", {
+        method: "POST",
+        body: JSON.stringify({
+          id,
+        }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
         .then((res) => res.json())
         .then((data) => {
           // Update the state (replyList) with the fetched replies.
@@ -75,7 +72,7 @@ const Replies = () => {
   */
   const addReply = () => {
     // Send a request to the server to create a new reply.
-    fetch("https://forum-system-7877dc8bc5ee.herokuapp.com/api/create/reply", {
+    fetch("http://localhost:4000/api/create/reply", {
       method: "POST",
       body: JSON.stringify({
         id, // The id of the current thread
