@@ -27,7 +27,7 @@ const Home = () => {
         navigate("/");
       } else {
         // Fetch the list of threads from the server.
-        fetch("http://localhost:4000/api/all/threads") // Updated route
+        fetch("https://forum-system-server.onrender.com/api/all/threads") // Updated route
           .then((res) => {
             if (!res.ok) {
               throw new Error("Network response was not ok");
@@ -55,7 +55,7 @@ const Home = () => {
       return;
     }
     // Fetch to create a new thread on the server.
-    fetch("http://localhost:4000/api/create/thread", {
+    fetch("https://forum-system-server.onrender.com/api/create/thread", {
       method: "POST",
       body: JSON.stringify({
         thread,

@@ -13,7 +13,7 @@ const Register = () => {
   /* Function to handle user registration, sending a request to the server. */
   const signUp = (email, password, username) => {
     // Fetch to register a new user on the server.
-    fetch("http://localhost:4000/api/register", {
+    fetch("https://forum-system-server.onrender.com/api/register", {
       method: "POST",
       body: JSON.stringify({
         email,

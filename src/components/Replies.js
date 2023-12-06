@@ -39,7 +39,7 @@ const Replies = () => {
     // Function to fetch replies for the current thread from the server.
     const fetchReplies = () => {
       // Making a POST request to the server's endpoint for fetching replies.
-      fetch("http://localhost:4000/api/thread/replies", {
+      fetch("https://forum-system-server.onrender.com/api/thread/replies", {
         method: "POST",
         body: JSON.stringify({
           id,
@@ -72,7 +72,7 @@ const Replies = () => {
   */
   const addReply = () => {
     // Send a request to the server to create a new reply.
-    fetch("http://localhost:4000/api/create/reply", {
+    fetch("https://forum-system-server.onrender.com/api/create/reply", {
       method: "POST",
       body: JSON.stringify({
         id, // The id of the current thread
